@@ -1,5 +1,4 @@
 # LifeInWeeks
-# Safari in Africa landing
 
 ### Use Skills
 
