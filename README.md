@@ -9,13 +9,11 @@
 
 ---
 
-[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Safari_in_Africa_landing/)
-
-![mercedes01](readme/mercedes01.gif)
+[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](#)
 
 ## Info
 
-Создано на основе YouTube канала [От 0 до 1.](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1/videos)  
+Создано на основе задания курса по "Frontend разработки" [Нетология](https://netology.ru)  
 Для обучения и отработки работы c CSS и JavaScript.  
 
 ---
