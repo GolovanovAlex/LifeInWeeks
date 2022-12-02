@@ -1,0 +1,62 @@
+// ---- ---- *** ---- ---- //
+//font-family: 'Alegreya', serif;
+// ---- ---- colors ---- ---- //
+$color_text: #f9f9ff;
+$color_1: #d55448;
+$color_2: #ffa577;
+$color_3: #896e69;
+$color_4: #626d71;
+$color_5: #ddbc95;
+// ---- ---- *** ---- ---- //
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// ---- ---- colors ---- ---- //
+body {
+  font-family: 'Alegreya', serif;
+  color: $color_text;
+}
+
+.main {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+}
+.weeks {
+  width: 760px;
+
+  &__text {
+  }
+  &__week-text {
+  }
+  &__year-text {
+  }
+  &__body {
+  }
+  &__body-weeks {
+  }
+  &__body-x {
+  }
+  &__body-years {
+  }
+  &__body-y {
+  }
+  &__content {
+  }
+}
+.title {
+}
+.control {
+}
