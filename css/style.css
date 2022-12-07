@@ -1,14 +1,25 @@
+/*//font-family: 'Alegreya', serif;
+// ---- ---- colors ---- ---- //
+$color_text: #f9f9ff;
+$color_1: #d55448;
+$color_2: #ffa577;
+$color_3: #896e69;
+$color_4: #626d71;
+$color_5: #ddbc95;*/
+
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
+h1 {
+  padding: 0;
+  margin: 0;
+}
 body {
-  font-family: "Alegreya", serif;
+  font-family: 'Alegreya', serif;
   color: #f9f9ff;
 }
 
@@ -21,13 +32,21 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 1280px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
 .weeks {
+  position: relative;
   width: 760px;
+}
+.weeks__year-text,
+.weeks__week-text {
+  font-size: 5.1rem;
+  font-weight: 600;
+  line-height: 7rem;
+  text-transform: uppercase;
 }
