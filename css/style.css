@@ -20,9 +20,18 @@ h1 {
 }
 body {
   font-family: 'Alegreya', serif;
+  font-weight: 400;
   color: #f9f9ff;
 }
-
+html {
+  font-size: 62.5%;
+}
+.hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
 .main {
   background-image: url(../images/bg.jpg);
   background-size: cover;
@@ -42,6 +51,7 @@ body {
 .weeks {
   position: relative;
   width: 760px;
+  padding: 3.5rem 5rem 3.5rem calc(5rem + 7rem);
 }
 .weeks__year-text,
 .weeks__week-text {
@@ -49,4 +59,33 @@ body {
   font-weight: 600;
   line-height: 7rem;
   text-transform: uppercase;
+}
+.weeks__week-text {
+  padding-left: calc(0.7rem * 2 + 1.3rem);
+}
+.weeks__year-text {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  top: calc(3.5rem+7rem+1.1rem+1.3rem+0.7rem * 2);
+  left: calc(0px + 7rem + 5rem);
+}
+.weeks__body {
+  position: relative;
+  width: 440px;
+  margin-top: 1.1rem;
+  padding-left: calc(0.7rem * 2 + 1.3rem);
+}
+.weeks__body-weeks {
+  position: relative;
+  left: -7px;
+  display: flex;
+  width: 413px;
+  padding: 0.7rem 0;
+}
+.weeks__body-years {
+  position: absolute;
+  top: calc(0.7rem * 2 + 1.3rem);
+  left: 0;
+  padding: 0 0.7rem;
 }
