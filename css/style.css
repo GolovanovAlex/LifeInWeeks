@@ -83,9 +83,32 @@ html {
   width: 413px;
   padding: 0.7rem 0;
 }
+.weeks__body-x--zero {
+  display: inline-block;
+  width: 7px;
+}
+.weeks__body-x {
+  width: calc(5px * 10 + 3px * 10);
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.weeks__body-x:last-of-type {
+  width: auto;
+}
 .weeks__body-years {
   position: absolute;
   top: calc(0.7rem * 2 + 1.3rem);
   left: 0;
   padding: 0 0.7rem;
+}
+.weeks__body-y {
+  display: flex;
+  align-items: flex-end;
+  height: calc(5px * 10 + 3px * 9);
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  vertical-align: bottom;
+}
+.weeks__body-y + .weeks__body-y {
+  margin-top: 6px;
 }
