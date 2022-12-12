@@ -1,12 +1,17 @@
 /*//font-family: 'Alegreya', serif;
 // ---- ---- colors ---- ---- //
-$color_text: #f9f9ff;
+color_text: #f9f9ff;
 $color_1: #d55448;
 $color_2: #ffa577;
 $color_3: #896e69;
 $color_4: #626d71;
 $color_5: #ddbc95;*/
-
+:root {
+  --young_color: #deffc4;
+  --adult_color: #b6ed8b;
+  --senior_color: #ffbb11;
+  --lifespan: 77.6;
+}
 *,
 *::before,
 *::after {
@@ -111,4 +116,59 @@ html {
 }
 .weeks__body-y + .weeks__body-y {
   margin-top: 6px;
+}
+.weeks__content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 413px;
+}
+.weeks__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.weeks__dot:not(:nth-of-type(52n)) {
+  margin-right: 3px;
+}
+.weeks__dot:nth-of-type(n + 53) {
+  margin-top: 3px;
+}
+.weeks__dot:nth-of-type(520n + 1) {
+  margin-top: 6px;
+}
+.weeks__dot:first-of-type {
+  margin-top: 0;
+}
+.weeks__dot._empty {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.weeks__dot._young {
+  background: #ffffff;
+  border: 1px solid var(--young_color);
+}
+.weeks__dot._adult {
+  background: var(--adult_color);
+}
+.weeks__dot._senior {
+  background: var(--senior_color);
+}
+
+.weeks__comment {
+  position: absolute;
+  top: 0;
+  right: -155px;
+  width: 145px;
+  height: calc(
+    (5px * 10 + 3px * 9) * var(--lifespan) / 10 + 6px * var(--lifespan) / 10
+  );
+  transition: height 0.5s;
+}
+.weeks__comment::before {
+  content: url(images/svg/top);
+}
+.weeks__comment::after {
 }
