@@ -168,7 +168,66 @@ html {
   transition: height 0.5s;
 }
 .weeks__comment::before {
-  content: url(images/svg/top);
+  content: url(../images/svg/top-bracket.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 12px;
 }
 .weeks__comment::after {
+  content: url(../images/svg/top-bracket.svg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 12px;
+  transform: scale(1, -1);
+}
+.weeks__comment-wrap::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  bottom: calc(50% - 2px);
+  width: 1px;
+  background-color: #fff;
+}
+.weeks__comment-wrap::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 14px);
+  left: 5px;
+  bottom: 12px;
+  width: 1px;
+  background-color: #fff;
+}
+.weeks-comment-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding-left: 2.4rem;
+}
+.weeks__comment-content::before {
+  content: url(../images/svg/v.svg);
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 5px;
+  height: 14px;
+}
+.weeks__comment-age {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.weeks__comment-age::before {
+  content: attr(data-middle);
+}
+.weeks__statistic {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.weeks__comment-sex::before {
+  content: attr(data-sex);
 }
